@@ -20,7 +20,7 @@
 
 
 
-.header__add-nav {}
+
 
 @media screen and (max-width: 1399px){
 
@@ -88,15 +88,42 @@
         display: none;
      }
 
+         .header__logo {
+             text-transform: uppercase;
+         }
+
      .header__main-nav-list{
         display: flex;
      }
 
-     .header__main-nav-list-item:not(:last-child){
-        margin-right: 5px;
+     .header__add-nav-list{
+        display: flex;
+     }
+     .header__main-nav-list-item{
+        position: relative;
+        
+        &::after{
+            content: '\2304';
+
+            position: absolute;
+            top: -10px;
+            right: -14px;
+            display: inline-block;
+            font-size: 20px;
+        }
+            &:not(:last-child){
+                margin-right: 40px;
+            }
      }
 
      .header__add-nav-list-item{
-        display: flex;
+       margin-right: 10px;
+
+  
      }
+
+         .header__add-nav-list-item-icon:not(:last-child) {
+             margin-right: 15px;
+         }
+
 }
