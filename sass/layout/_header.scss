@@ -2,21 +2,9 @@
     height: 39px;
     display: flex;
     align-items: center;
+
+            box-shadow: 9px 30px 54px -23px #8f8f8f;
 }
-
-
-
-
-
-
-
-.header__main-nav-list {}
-
-.header__main-nav-list-item {}
-
-
-
-.header__burger-item {}
 
 
 
@@ -75,6 +63,10 @@
 }
 
 @media screen and (min-width: 1400px) {
+
+    // .header{
+    //     box-shadow: 9px 30px 54px -23px #8f8f8f;
+    // }
     .header__main-nav {
             display: block;
         }

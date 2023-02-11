@@ -71,6 +71,7 @@ img {
   height: 39px;
   display: flex;
   align-items: center;
+  box-shadow: 9px 30px 54px -23px #8f8f8f;
 }
 
 @media screen and (max-width: 1399px) {
@@ -156,5 +157,23 @@ img {
   }
   .header__add-nav-list-item-icon:not(:last-child) {
     margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .hero {
+    height: 192px;
+    width: 100%;
+    background-image: url(../../images/hero/mobile-iqos-1x-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero {
+    padding: 61px 64px;
+    background-image: url(../../images/hero/desktop-hero-1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 448px;
   }
 }/*# sourceMappingURL=index.css.map */
