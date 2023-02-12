@@ -51,6 +51,8 @@ img {
   --main-color: #00D1D2;
   --primaty-color: #F6F4F0;
   --dark-color: #33303C;
+  --main-font-color: #313131;
+  --label-title-color:#6F6F6F;
 }
 
 .visually-hidden {
@@ -118,6 +120,9 @@ img {
   }
 }
 @media screen and (min-width: 1400px) {
+  .header {
+    margin-bottom: 61px;
+  }
   .header__main-nav {
     display: block;
   }
@@ -170,10 +175,122 @@ img {
 }
 @media screen and (min-width: 1400px) {
   .hero {
-    padding: 61px 64px;
+    width: 100%;
     background-image: url(../../images/hero/desktop-hero-1x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 448px;
   }
+}
+.section-form {
+  padding-top: 12px;
+}
+
+.section-form__date {
+  font-family: "IQOS";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-font-color);
+  margin-bottom: 24px;
+}
+
+.section-form__title {
+  font-family: "IQOS";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.section-form__action-text {
+  font-family: "IQOS";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.action-text__bold {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) {
+  .section-form {
+    padding-top: 56px;
+  }
+}
+.form {
+  padding: 36px 24px;
+  background-color: var(--main-color);
+  border-radius: 24px;
+}
+
+.form__label {
+  margin-bottom: 36px;
+  display: block;
+}
+
+.form__label-title {
+  font-family: "IQOS";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--label-title-color);
+  margin-bottom: 4px;
+}
+
+.form__label-input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.form__label-input::-moz-placeholder {
+  font-family: "IQOS";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+
+.form__label-input::placeholder {
+  font-family: "IQOS";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+
+.form-label__checkbox {
+  display: block;
+  margin-bottom: 36px;
+}
+
+.form__btn {
+  margin-bottom: 12px;
+}
+
+.form__btn-text {
+  color: #fff;
+  font-family: "IQOS";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 9px;
+}
+
+.form__btn-icon {
+  fill: inherit;
+}
+
+.btn {
+  background-color: var(--dark-color);
+  min-width: 267px;
+  min-height: 48px;
+  border-radius: 24px;
+  border: none;
+  padding: 12px 57px;
 }/*# sourceMappingURL=index.css.map */

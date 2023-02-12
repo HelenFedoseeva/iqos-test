@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
 
-            box-shadow: 9px 30px 54px -23px #8f8f8f;
+    box-shadow: 9px 30px 54px -23px #8f8f8f;
 }
 
 
@@ -62,11 +62,16 @@
      }
 }
 
+
+
+ //=====================================================================
+
+
 @media screen and (min-width: 1400px) {
 
-    // .header{
-    //     box-shadow: 9px 30px 54px -23px #8f8f8f;
-    // }
+    .header{
+       margin-bottom: 61px;
+    }
     .header__main-nav {
             display: block;
         }

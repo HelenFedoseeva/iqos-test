@@ -10,10 +10,10 @@
 
 @media screen and (min-width: 1400px) {
     .hero{
-        padding: 61px 64px;
+        width: 100%;
         background-image: url(../../images/hero/desktop-hero-1x.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
 
         height: 448px;
     }
