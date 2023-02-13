@@ -207,11 +207,12 @@ img {
     height: 448px;
   }
 }
-.section-form {
-  padding-top: 12px;
-  margin-bottom: 36PX;
+@media screen and (max-width: 1399px) {
+  .section-form {
+    padding-top: 12px;
+    margin-bottom: 36px;
+  }
 }
-
 .section-form__date {
   font-family: "IQOS";
   font-weight: 400;
@@ -241,11 +242,6 @@ img {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1400px) {
-  .section-form {
-    padding-top: 56px;
-  }
-}
 .form {
   padding: 36px 24px;
   background-color: var(--main-color);
@@ -365,6 +361,14 @@ img {
   line-height: 1.5;
 }
 
+@media screen and (min-width: 1400px) {
+  .form {
+    width: 700px;
+  }
+  .section-form {
+    margin-bottom: 36px;
+  }
+}
 .section-smart-change {
   margin-bottom: 60px;
 }
@@ -475,6 +479,13 @@ img {
   left: 87px;
 }
 
+@media screen and (min-width: 1400px) {
+  .main__flex-sections {
+    display: flex;
+    gap: 45px;
+    margin-top: 56px;
+  }
+}
 .section-news {
   padding: 24px 32px;
   background-color: var(--primary-color);
@@ -539,15 +550,31 @@ img {
   right: -22px;
 }
 
-.section-about {
-  min-height: 510px;
-  background-image: url(../images/section-about/about-background-min.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-bottom: 53px;
+@media screen and (min-width: 1400px) {
+  .section-news {
+    width: 392px;
+  }
 }
-
+@media screen and (max-width: 1399) {
+  .section-about {
+    min-height: 510px;
+    background-image: url(../images/section-about/about-background-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 53px;
+  }
+}
+@media screen and (max-width: 1400) {
+  .section-about {
+    min-height: 568px;
+    background-image: url(../images/section-about/about-background-desktop-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 53px;
+  }
+}
 .footer {
   min-height: 553px;
   background-color: var(--main-font-color);

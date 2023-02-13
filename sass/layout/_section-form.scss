@@ -1,7 +1,14 @@
-.section-form {
-  padding-top: 12px;
-  margin-bottom: 36PX;
+
+@media screen and (max-width: 1399px) {
+  .section-form {
+      padding-top: 12px;
+      margin-bottom: 36px;
+    }
 }
+
+
+
+
 .section-form__date {
   font-family: "IQOS";
   font-weight: 400;
@@ -34,15 +41,12 @@
   font-weight: bold;
 }
 
-@media screen and (min-width: 1400px) {
-  .section-form {
-    padding-top: 56px;
-  }
-}
+
 
 .form {
   padding: 36px 24px;
   background-color: var(--main-color);
+  
 
   border-radius: 24px;
 }
@@ -92,7 +96,7 @@
 
   padding: 12px 57px;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .form__btn-text{
 color: #fff;
@@ -163,4 +167,18 @@ color: #fff;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+}
+
+//============================================================================
+
+@media screen and (min-width: 1400px) {
+ 
+
+  .form{
+    width: 700px;
+  }
+
+    .section-form {
+      margin-bottom: 36px;
+    }
 }

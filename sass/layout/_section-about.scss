@@ -1,9 +1,23 @@
-.section-about{
-    min-height: 510px;
-    background-image: url(../images/section-about/about-background-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+@media screen and (max-width: 1399) {
+    .section-about {
+            min-height: 510px;
+            background-image: url(../images/section-about/about-background-min.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+    
+            margin-bottom: 53px;
+        }
+}
 
-    margin-bottom: 53px;
+@media screen  and (max-width: 1400){
+    .section-about{
+        min-height: 568px;
+        background-image: url(../images/section-about/about-background-desktop-min.png);
+        background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        
+            margin-bottom: 53px;
+    }
 }
