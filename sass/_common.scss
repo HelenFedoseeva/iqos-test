@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IQOS', sans-serif;
 }
 
 h1,
@@ -33,4 +33,16 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+@font-face {
+    font-family: 'IQOS';
+    src: local('IQOS') url(../fonts/IQOS-Regular.ff6182f.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'IQOSBold';
+    src: local('IQOS') url(../fonts/IQOS-Bold.51fa233.ttf);
+    font-weight: normal;
 }
