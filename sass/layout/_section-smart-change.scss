@@ -1,0 +1,45 @@
+.section-smart-change {
+}
+
+.section-smart-change__about {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  margin-bottom: 36px;
+}
+
+.section-smart-change-prod {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-smart-change__prod-list-wrap {
+  display: flex;
+}
+
+.section-smart-change__prod-list-icon{
+    margin-right: 12px;
+}
+
+.section-smart-change__prod-img {
+  margin: 36px auto;
+}
+
+.section-smart-change__prod-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-smart-change__prod-list {
+}
+
+.section-smart-change__prod-list-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

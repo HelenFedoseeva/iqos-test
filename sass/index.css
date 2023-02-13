@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,8 +32,6 @@ ol {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 @font-face {
@@ -194,6 +193,7 @@ img {
 }
 .section-form {
   padding-top: 12px;
+  margin-bottom: 36PX;
 }
 
 .section-form__date {
@@ -294,6 +294,90 @@ img {
 
 .form__btn-icon {
   fill: inherit;
+}
+
+.form-label__checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form-label__checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  clip: rect(0 0 0 0);
+}
+
+.form-label__checkbox-custom {
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  background-color: #fff;
+  border: 1px solid var(--dark-color);
+  border-radius: 3px;
+  transition: background-color 250ms ease-in-out, background-image 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+.form-label__checkbox-custom:focus {
+  outline: none;
+  border: 2px solid;
+  border-color: var(--dark-color);
+}
+.form-label__checkbox-input:checked + .form-label__checkbox-custom {
+  background-color: var(--label-title-color);
+  border-color: black;
+  background-image: url("../../images/icon-check/symbol-defs.svg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 7px 7px;
+  background-position: center;
+}
+
+.form-label__checkbox-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-smart-change__about {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.section-smart-change-prod {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-smart-change__prod-list-wrap {
+  display: flex;
+}
+
+.section-smart-change__prod-list-icon {
+  margin-right: 12px;
+}
+
+.section-smart-change__prod-img {
+  margin: 36px auto;
+}
+
+.section-smart-change__prod-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-smart-change__prod-list-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .btn {

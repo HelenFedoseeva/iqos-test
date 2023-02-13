@@ -1,6 +1,8 @@
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+ 
 }
 
 body {
@@ -31,8 +33,8 @@ ol {
 
 img {
     display: block;
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    // height: auto;
 }
 
 @font-face {
