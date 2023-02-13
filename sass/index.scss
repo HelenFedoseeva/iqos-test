@@ -6,6 +6,8 @@
 @import './utils/root';
 @import './utils/visually-hidden';
 
+@import './components/buttons';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/section-form';
@@ -15,5 +17,5 @@
 @import './layout/section-about';
 @import './layout/footer';
 
-@import './components/buttons';
+
 @import './components/modal-open';
