@@ -182,7 +182,8 @@ img {
     border-color: var(--main-color);
     background-image: url(../images/hero/mobile-iqos-1x-hero.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -190,8 +191,8 @@ img {
     width: 100%;
     border-color: var(--main-color);
     background-image: url(../images/hero/desktop-hero-1x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     height: 448px;
   }
 }
