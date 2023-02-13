@@ -1,0 +1,40 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 20px 30px;
+    background-color: var(--main-color);
+
+    width: 150px;
+    height: 100%;
+
+    transform: translateY(-100%);
+
+}
+
+.transform{
+transform: translateX(6%);
+}
+
+.mobile-menu__btn-close {
+    background-image: url(../../images/close-icon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        border: none;
+        cursor: pointer;
+    
+    
+        width: 18px;
+        height: 18px;
+}
+
+.mobile-menu__nav {
+
+}
+
+.mobile-menu__nav-list {}
+
+.mobile-menu__nav-list-item {}

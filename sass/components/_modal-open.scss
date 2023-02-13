@@ -1,0 +1,51 @@
+.backdrop {
+    position: fixed;
+   top: 0px;
+   left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+ 
+    background-color: #89888847;
+
+    transition: opacity 250ms, visibility 250ms;
+}
+
+ .is-hidden {
+     pointer-events: none;
+     opacity: 0;
+     visibility: hidden;
+
+ }
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    min-width: 300px;
+    min-height: 200px;
+    background-color: #f4f4f4;
+    transform: translate(154%, 75%);
+
+}
+
+.modal__btn-close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.modal__btn-close{
+    background-image: url(../../images/close-icon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border: none;
+    cursor: pointer;
+
+
+    width: 22px;
+    height: 22px;
+}

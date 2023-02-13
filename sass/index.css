@@ -109,6 +109,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   .header__burger-item {
     display: block;
@@ -546,4 +547,74 @@ img {
 .footer {
   min-height: 553px;
   background-color: var(--main-font-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(137, 136, 136, 0.2784313725);
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 300px;
+  min-height: 200px;
+  background-color: #f4f4f4;
+  transform: translate(154%, 75%);
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.modal__btn-close {
+  background-image: url(../../images/close-icon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 20px 30px;
+  background-color: var(--main-color);
+  width: 150px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+
+.transform {
+  transform: translateX(6%);
+}
+
+.mobile-menu__btn-close {
+  background-image: url(../../images/close-icon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=index.css.map */
