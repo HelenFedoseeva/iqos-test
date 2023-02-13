@@ -1,9 +1,9 @@
 .section-smart-change {
+  margin-bottom: 60px;
 }
-
 .section-smart-change__about {
   font-weight: 700;
-  font-size: 16px;
+
   line-height: 1.5;
 
   text-align: center;
@@ -12,17 +12,17 @@
 }
 
 .section-smart-change-prod {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
+
+  margin-bottom: 36px;
 }
 
 .section-smart-change__prod-list-wrap {
   display: flex;
 }
 
-.section-smart-change__prod-list-icon{
-    margin-right: 12px;
+.section-smart-change__prod-list-icon {
+  margin-right: 12px;
 }
 
 .section-smart-change__prod-img {
@@ -31,8 +31,9 @@
 
 .section-smart-change__prod-text {
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.5;
+
+  margin-bottom: 12px;
 }
 
 .section-smart-change__prod-list {
@@ -42,4 +43,27 @@
   &:not(:last-child) {
     margin-bottom: 12px;
   }
+}
+
+.section-smart-change__address-text {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main-font-color);
+
+  margin-bottom: 36px;
+}
+
+.section-smart-change__contacts {
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main-font-color);
+
+  margin-bottom: 36px;
+}
+.section-smart-change__text {
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  text-align: center;
 }

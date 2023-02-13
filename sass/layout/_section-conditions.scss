@@ -1,0 +1,48 @@
+.section-conditions {
+  position: relative;
+
+  background-color: var(--main-color);
+  padding: 36px 30px;
+
+  margin-bottom: 36px;
+}
+.section-conditions__dots {
+  position: absolute;
+  left: -31px;
+}
+.section-conditions__dots-1 {
+  margin-bottom: -11px;
+  margin-right: 12px;
+  transform: rotate(270deg);
+}
+.section-conditions__dots-2 {
+  transform: rotate(270deg);
+}
+
+.section-conditions-wrap {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+
+.section-conditions-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #fffdfb;
+
+  margin-left: 17.5px;
+}
+.section-conditions__wrap-dots {
+  position: absolute;
+
+  bottom: -15px;
+  left: 87px;
+}
