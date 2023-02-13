@@ -140,6 +140,7 @@ img {
 @media screen and (min-width: 1400px) {
   .header {
     margin-bottom: 61px;
+    display: block;
   }
   .header__main-nav {
     display: block;
@@ -150,6 +151,9 @@ img {
     align-items: center;
   }
   .header__burger {
+    display: none;
+  }
+  .mobile-menu {
     display: none;
   }
   .header__logo {
@@ -601,7 +605,8 @@ img {
   background-color: var(--main-color);
   width: 150px;
   height: 100%;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in;
 }
 
 .transform {

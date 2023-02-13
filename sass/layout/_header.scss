@@ -9,6 +9,10 @@
   
 }
 
+// .header__wrapper{
+//     position: relative;
+// }
+
 
 
 
@@ -76,6 +80,7 @@
 
     .header{
        margin-bottom: 61px;
+       display: block;
     }
     .header__main-nav {
             display: block;
@@ -87,6 +92,9 @@
      align-items: center;
  }
      .header__burger {
+        display: none;
+     }
+     .mobile-menu{
         display: none;
      }
 
