@@ -179,6 +179,7 @@ img {
   .hero {
     height: 192px;
     width: 100%;
+    border-color: var(--main-color);
     background-image: url(../../images/hero/mobile-iqos-1x-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,6 +188,7 @@ img {
 @media screen and (min-width: 1400px) {
   .hero {
     width: 100%;
+    border-color: var(--main-color);
     background-image: url(../../images/hero/desktop-hero-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,6 +366,9 @@ img {
 
 .section-smart-change__prod-list-wrap {
   display: flex;
+}
+.section-smart-change__prod-list-wrap:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .section-smart-change__prod-list-icon {

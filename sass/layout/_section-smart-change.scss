@@ -19,6 +19,10 @@
 
 .section-smart-change__prod-list-wrap {
   display: flex;
+
+  &:not(:last-child){
+    margin-bottom: 12px;
+  }
 }
 
 .section-smart-change__prod-list-icon {

@@ -2,6 +2,7 @@
     .hero {
             height: 192px;
             width: 100%;
+            border-color: var(--main-color);
             background-image: url(../../images/hero/mobile-iqos-1x-hero.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -11,6 +12,7 @@
 @media screen and (min-width: 1400px) {
     .hero{
         width: 100%;
+        border-color: var(--main-color);
         background-image: url(../../images/hero/desktop-hero-1x.png);
         background-repeat: no-repeat;
         background-size: cover;
