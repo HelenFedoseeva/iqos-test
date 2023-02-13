@@ -180,7 +180,7 @@ img {
     height: 192px;
     width: 100%;
     border-color: var(--main-color);
-    background-image: url(../../images/hero/mobile-iqos-1x-hero.png);
+    background-image: url(../images/hero/mobile-iqos-1x-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -189,7 +189,7 @@ img {
   .hero {
     width: 100%;
     border-color: var(--main-color);
-    background-image: url(../../images/hero/desktop-hero-1x.png);
+    background-image: url(../images/hero/desktop-hero-1x.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 448px;
@@ -365,13 +365,14 @@ img {
 }
 
 .section-smart-change__prod-list-wrap {
-  display: flex;
+  position: relative;
 }
 .section-smart-change__prod-list-wrap:not(:last-child) {
   margin-bottom: 12px;
 }
 
 .section-smart-change__prod-list-icon {
+  position: absolute;
   margin-right: 12px;
 }
 
@@ -385,6 +386,9 @@ img {
   margin-bottom: 12px;
 }
 
+.section-smart-change__prod-list-item {
+  margin-left: 34px;
+}
 .section-smart-change__prod-list-item:not(:last-child) {
   margin-bottom: 12px;
 }
