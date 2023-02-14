@@ -1,20 +1,14 @@
 .header {
-    height: 39px;
+    min-height: 70px;
+
     display: flex;
     align-items: center;
 
-    box-shadow: 9px 30px 54px -23px #8f8f8f;
+   
 
 
   
 }
-
-// .header__wrapper{
-//     position: relative;
-// }
-
-
-
 
 
 @media screen and (max-width: 1399px){
@@ -80,7 +74,8 @@
 
     .header{
        margin-bottom: 61px;
-       display: block;
+        box-shadow: 9px 30px 54px -23px #8f8f8f;
+  
     }
     .header__main-nav {
             display: block;

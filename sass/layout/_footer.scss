@@ -1,4 +1,144 @@
 .footer{
-    min-height: 553px;
     background-color: var(--main-font-color);
+    padding: 24px 30px;
+}
+.footer__container{
+    padding-top: 16px;
+    width: 100%;
+
+}
+
+
+.footer__nav {
+    margin-bottom: 36px;
+}
+
+.footer__nav-list {
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+.footer__nav-list-title {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--label-title-color);
+
+    margin-bottom: 10px;
+}
+
+.footer__nav-list-item {
+    color: #fff;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.footer__nav-list-item-link {
+    color: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    color: white;
+
+    margin-bottom: 28px;
+}
+
+.footer__copyright,
+.footer__copyright-desktop {
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #fff;
+
+    margin-bottom: 30px;
+}
+
+.footer__cookies{
+    font-size: 12px;
+        line-height: 1.5;
+        color: var(--label-title-color);
+}
+@media  screen and (min-width: 320px) {
+    .footer__copyright-desktop {
+        display: none;
+    }
+
+    .footer__copyright{
+        text-align: center;
+    }
+
+    .footer__nav-copyright-desktop{
+        display: none;
+    }
+
+    .footer__nav-cookies-desktop{
+        display: none;
+    }
+    .footer__warning{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+        padding-top: 24px;
+    }
+    .footer__nav{
+        display: flex;
+        justify-content: space-between;
+
+        padding-left: 145px;
+        padding-right: 140px;
+    }
+    .footer__line{
+        display: none;
+    }
+    .footer__copyright{
+        display: none;
+    }
+    
+    .footer__nav-copyright-desktop{
+        display: block;
+    text-align: left;
+    font-size: 12px;
+    color: var(--label-title-color);
+   }
+   
+    .footer__copyright-desktop {
+        display: block;
+    }
+
+    .footer__cookies{
+        display: none;
+    }
+    
+        .footer__nav-cookies-desktop{
+            display: block;
+            font-size: 12px;
+                color: var(--label-title-color);
+        }
+
+        .footer__warning{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 14px;
+            color: var(--label-title-color);
+
+            background-color: #2a2828;
+            width: 100%;
+            height: 70px;
+
+        }
 }
