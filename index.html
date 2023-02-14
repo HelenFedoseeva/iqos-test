@@ -16,9 +16,33 @@
             <h1 class="header__title visually-hidden">Header</h1>
             <nav class="header__main-nav">
                 <ul class="header__main-nav-list">
-                    <li class="header__main-nav-list-item"><a href="#">Despre produs</a></li>
-                    <li class="header__main-nav-list-item"><a href="#">Catalog</a></li>
-                    <li class="header__main-nav-list-item"><a href="#">myIQOS</a></li>
+                    <li class="header__main-nav-list-item"  id="dropdown-1">
+                        <div class="header__dropdown">
+                            <button class="header__dropdown-btn" type="button">Despre produs</button>
+                            <div id="dropdown-despre" class="header__dropdown-content">
+                                <a href="#">Lorem...</a>
+                                <a href="#">Lorem...</a>
+                            </div>
+                        </div>
+                     </li>
+                    <li class="header__main-nav-list-item"  id="dropdown-2">
+                        <div class="header__dropdown">
+                            <button class="header__dropdown-btn" type="button">Catalog</button>
+                            <div id="dropdown-catalog" class="header__dropdown-content">
+                                <a href="#">Lorem...</a>
+                                <a href="#">Lorem...</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__main-nav-list-item"  id="dropdown-3">
+                        <div class="header__dropdown">
+                            <button class="header__dropdown-btn" type="button">myIQOS</button>
+                            <div id="dropdown-IQOS" class="header__dropdown-content">
+                                <a href="#">Lorem...</a>
+                                <a href="#">Lorem...</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <div class="header__burger">
@@ -313,6 +337,7 @@
         </div>
     </div>
     <script type="module" src="./index.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/dropdown.js"></script>
 </body>
 </html>

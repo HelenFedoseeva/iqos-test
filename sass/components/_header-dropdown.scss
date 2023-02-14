@@ -1,0 +1,29 @@
+.header__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header__dropdown-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+       text-decoration: underline;
+    }
+}
+
+.header__dropdown-content {
+    position: absolute;
+
+    display: none;
+    background-color: rgb(191, 188, 188);
+    z-index: 1;
+    width: 110px;
+}
+
+.show{
+    display: block;
+}
