@@ -576,12 +576,12 @@ img {
 }
 .footer {
   background-color: var(--main-font-color);
-  padding: 24px 30px;
 }
 
 .footer__container {
-  padding-top: 16px;
-  width: 100%;
+  padding-top: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .footer__nav {
@@ -601,6 +601,7 @@ img {
 
 .footer__nav-list-item {
   color: #fff;
+  font-size: 13px;
 }
 .footer__nav-list-item:not(:last-child) {
   margin-bottom: 10px;
@@ -608,8 +609,12 @@ img {
 
 .footer__nav-list-item-link {
   color: inherit;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
+}
+
+.footer__nav-wrapper-first-ul {
+  margin-bottom: 40px;
 }
 
 .footer__line {
@@ -622,7 +627,7 @@ img {
 
 .footer__copyright,
 .footer__copyright-desktop {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
   color: #fff;
   margin-bottom: 30px;
@@ -634,7 +639,27 @@ img {
   color: var(--label-title-color);
 }
 
+.footer__nav-lang-title {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--label-title-color);
+  margin-bottom: 10px;
+}
+
+.footer__nav-lang {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
 @media screen and (min-width: 320px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+  .footer__nav-mobile-flex {
+    display: flex;
+    gap: 80px;
+  }
   .footer__copyright-desktop {
     display: none;
   }
@@ -652,20 +677,30 @@ img {
   }
 }
 @media screen and (min-width: 1400px) {
-  .footer {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-top: 24px;
-  }
   .footer__nav {
     display: flex;
     justify-content: space-between;
     padding-left: 145px;
     padding-right: 140px;
+    margin-bottom: 55px;
+  }
+  .footer__nav-list:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .footer__nav-flex {
+    display: flex;
+    gap: 110px;
+    margin-bottom: 85px;
   }
   .footer__line {
     display: none;
+  }
+  .footer__nav-mobile-flex {
+    display: block;
+  }
+  .footer__nav-lang-wrap {
+    margin-top: 36px;
+    margin-bottom: 53px;
   }
   .footer__copyright {
     display: none;
@@ -678,6 +713,7 @@ img {
   }
   .footer__copyright-desktop {
     display: block;
+    text-align: center;
   }
   .footer__cookies {
     display: none;
@@ -691,7 +727,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
     color: var(--label-title-color);
     background-color: #2a2828;
     width: 100%;
