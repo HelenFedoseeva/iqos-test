@@ -181,4 +181,12 @@ color: #fff;
     .section-form {
       margin-bottom: 36px;
     }
+.form-label__checkbox{
+  display: flex;
+  align-items: center;
+}
+        .form-label__checkbox-custom{
+          width: 15px;
+          height: 15px;
+        }
 }
