@@ -871,13 +871,13 @@ img {
 
 .modal {
   position: absolute;
-  top: -58px;
-  left: -143px;
+  top: 0;
+  left: 0;
+  transform: translate(150%, 12%);
   padding: 20px;
   width: 300px;
   height: 200px;
   background-color: #f4f4f4;
-  transform: translate(154%, 75%);
   overflow: auto;
 }
 
@@ -904,6 +904,15 @@ img {
   gap: 8px;
 }
 
+@media screen and (min-width: 1400px) {
+  .modal {
+    width: 40%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(188px, 48px);
+  }
+}
 .mobile-menu {
   position: absolute;
   top: 0;
