@@ -147,7 +147,7 @@ color: #fff;
     border: 1px solid var(--dark-color);
     border-radius: 3px;
 
-    transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out, background-image 300ms ease-in, border-color 250ms ease-in-out;
   
   
     &:focus {
@@ -158,12 +158,15 @@ color: #fff;
 
         .form-label__checkbox-input:checked+& {
           background-color: var(--label-title-color);
-          border-color: black;
-          background-image: url('../../images/icon-check/symbol-defs.svg');
-          background-origin: border-box;
+          // border-color: black;
+          background-image: url('../images/icon-check/check-png.png');
+        
+          background-origin:border-box ;
           background-repeat: no-repeat;
-          background-size: 7px 7px;
+          background-size: contain;
           background-position: center;
+          
+          
     
         }
 }
