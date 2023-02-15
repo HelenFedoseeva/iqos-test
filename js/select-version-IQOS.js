@@ -2,8 +2,6 @@ const arrowSelectBtn = document.getElementById("arrow-select");
 const inputVersionRef = document.getElementById("version-input");
 const versionsListRef = document.querySelector(".form__select-version");
 
-console.dir(inputVersionRef);
-
 arrowSelectBtn.addEventListener("click", onArrowSelectClick);
 versionsListRef.addEventListener("click", onVersionListSelect);
 

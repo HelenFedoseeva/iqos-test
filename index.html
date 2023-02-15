@@ -101,22 +101,22 @@
                             class="action-text__bold">SMART CHANGE</span>, completând formularul:
                         </p>
                            <p class="section-form__action-text ru">Хочешь принять участие в программе <span class="action-text__bold">SMART CHANGE?</span> Заполни форму:</p>
-                    <form class="section-form__form form" action="submit">
+                    <form novalidate class="section-form__form form" action="submit">
                         <label class="form__label">
                             <span class="form__label-title ro">Prenume*</span>
                             <span class="form__label-title ru">Имя*</span>
-                            <input class="form__label-input" type="text" placeholder="Nicolai" required>
+                            <input class="form__label-input" name="userName" type="text" placeholder="Nicolai" required>
                         </label>
                         <label class="form__label">
                             <span class="form__label-title ro">Număr de telefon*</span>
                             <span class="form__label-title ru">Номер телефона **</span>
-                            <input class="form__label-input" type="tel" placeholder="069 000 000" pattern="06[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
-                            <span class="form__label-input-nitification is-hidden">Введен неверный формат номера телефона, используйте 06х ххх ххх или 07х ххх ххх</span>
+                            <input class="form__label-input" name="tel" type="tel" placeholder="069 000 000" pattern="06[0-9]{1}[0-9]{3}[0-9]{3}|07[0-9]{1}[0-9]{3}[0-9]{3}" required>
+                            <span id="error" class="form__label-input-nitification is-hidden">Введен неверный формат номера телефона, используйте 06х ххх ххх или 07х ххх ххх</span>
                         </label>
                         <label class="form__label form__label-select-version">
                             <span class="form__label-title ro">Versiunea*</span>
                             <span class="form__label-title ru">Версия*</span>
-                            <input id="version-input" class="form__label-input" type="text" required>
+                            <input id="version-input" class="form__label-input" name="version" type="text" required>
                             <button id="arrow-select" class="form__label-input-icon" type="button">
                                 <img src="./images/icon-check/arrow-down-png.png" alt="arrow" width="10" height="7">
                             </button>
@@ -132,7 +132,7 @@
                         <label class="form__label">
                             <span class="form__label-title ro">Cod dispozitiv*</span>
                             <span class="form__label-title ru">Код устройства*</span>
-                            <input class="form__label-input" type="text" required>
+                            <input class="form__label-input" name="IQOScode" type="text" required>
                             <button id="popup" class="form__label-input-icon" type="button">
                                 <img src="./images/icon-check/question-png.png" alt="arrow" width="12" height="12">
                             </button>
@@ -397,5 +397,6 @@
     <script type="module" src="./js/langChange.js"></script>
     <script type="module" src="./js/popup-open.js"></script>
     <script type="module" src="./js/select-version-IQOS.js"></script>
+    <script type="module" src="./js/validation-form.js"></script>
 </body>
 </html>
