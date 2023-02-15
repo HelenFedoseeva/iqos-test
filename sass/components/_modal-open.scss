@@ -20,13 +20,16 @@
 
 .modal {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -58px;
+        left: -143px;
+
+        padding: 20px;
     
-    min-width: 300px;
-    min-height: 200px;
+    width: 300px;
+    height: 200px;
     background-color: #f4f4f4;
     transform: translate(154%, 75%);
+    overflow: auto;
 
 }
 
@@ -48,4 +51,10 @@
 
     width: 22px;
     height: 22px;
+}
+
+.modal__img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }

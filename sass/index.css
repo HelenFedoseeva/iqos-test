@@ -58,6 +58,25 @@ img {
     margin: 0 auto;
   }
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-font-color);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 :root {
   --main-color: #00D1D2;
   --primary-color: #F6F4F0;
@@ -852,12 +871,14 @@ img {
 
 .modal {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 300px;
-  min-height: 200px;
+  top: -58px;
+  left: -143px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
   background-color: #f4f4f4;
   transform: translate(154%, 75%);
+  overflow: auto;
 }
 
 .modal__btn-close {
@@ -875,6 +896,12 @@ img {
   cursor: pointer;
   width: 22px;
   height: 22px;
+}
+
+.modal__img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .mobile-menu {
