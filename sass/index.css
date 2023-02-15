@@ -282,6 +282,7 @@ img {
 }
 
 .form__label {
+  position: relative;
   margin-bottom: 36px;
   display: block;
 }
@@ -301,6 +302,15 @@ img {
   outline: none;
   border: none;
   border-bottom: 1px solid var(--dark-color);
+}
+
+.form__label-input-icon {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .form__label-input::-moz-placeholder {
