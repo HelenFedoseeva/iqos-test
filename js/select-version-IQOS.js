@@ -9,10 +9,14 @@ versionsListRef.addEventListener("click", onVersionListSelect);
 
 function onArrowSelectClick(e) {
   e.preventDefault();
-
   const selectListRef = document.querySelector(".form__select-version");
 
-  selectListRef.classList.remove("is-hidden");
+  if (!selectListRef.classList.contains("visually-hidden")) {
+    selectListRef.classList.add("visually-hidden");
+    return;
+  }
+
+  selectListRef.classList.remove("visually-hidden");
 }
 
 function onVersionListSelect(e) {
@@ -20,5 +24,5 @@ function onVersionListSelect(e) {
 
   inputVersionRef.value = e.target.textContent;
 
-  versionsListRef.classList.add("is-hidden");
+  versionsListRef.classList.add("visually-hidden");
 }
