@@ -110,7 +110,8 @@
                         <label class="form__label">
                             <span class="form__label-title ro">Număr de telefon*</span>
                             <span class="form__label-title ru">Номер телефона **</span>
-                            <input class="form__label-input" type="number" placeholder="069 000 000" required>
+                            <input class="form__label-input" type="tel" placeholder="069 000 000" pattern="06[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+                            <span class="form__label-input-nitification is-hidden">Введен неверный формат номера телефона, используйте 06х ххх ххх или 07х ххх ххх</span>
                         </label>
                         <label class="form__label">
                             <span class="form__label-title ro">Versiunea*</span>

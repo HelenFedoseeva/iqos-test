@@ -233,6 +233,13 @@ img {
     height: 448px;
   }
 }
+.form__label-input-nitification {
+  color: red;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1399px) {
   .section-form {
     padding-top: 12px;
@@ -633,6 +640,7 @@ img {
     margin-bottom: 53px;
   }
   .section-about__icon {
+    display: block;
     margin-bottom: 80px;
   }
   .section-about__title {
