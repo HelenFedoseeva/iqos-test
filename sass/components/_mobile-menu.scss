@@ -20,17 +20,26 @@ transform: translateX(6%);
 }
 
 .mobile-menu__btn-close {
-    background-image: url(../../images/close-icon.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    position: relative;
+    // background-image: url(../../images/close-icon.jpg);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
     
         border: none;
         cursor: pointer;
+        background-color: transparent;
     
     
         width: 18px;
         height: 18px;
+
+        margin-bottom: 20px;
+}
+.mobile-menu__btn-close-img{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mobile-menu__nav {
@@ -39,4 +48,8 @@ transform: translateX(6%);
 
 .mobile-menu__nav-list {}
 
-.mobile-menu__nav-list-item {}
+.mobile-menu__nav-list-item {
+    &:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
