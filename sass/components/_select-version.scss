@@ -1,6 +1,12 @@
+.form__label-select-version{
+    position: relative;
+}
 .form__select-version {
+    width: 100%;
+    position: absolute;
 
-        background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(255, 255, 255, 0.873);
+    z-index: 2;
         
 }
 
