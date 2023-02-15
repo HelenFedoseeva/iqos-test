@@ -142,7 +142,7 @@ color: #fff;
     border: 1px solid var(--dark-color);
     border-radius: 3px;
 
-    transition: background-color 250ms ease-in-out, background-image 250ms ease-in-out, border-color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
   
   
     &:focus {
@@ -162,6 +162,8 @@ color: #fff;
     
         }
 }
+
+
 
 .form-label__checkbox-text {
     font-weight: 400;
@@ -183,7 +185,7 @@ color: #fff;
     }
 .form-label__checkbox{
   display: flex;
-  align-items: center;
+  align-items: centerx;
 }
         .form-label__checkbox-custom{
           width: 15px;

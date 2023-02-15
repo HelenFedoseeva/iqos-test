@@ -364,7 +364,7 @@ img {
   background-color: #fff;
   border: 1px solid var(--dark-color);
   border-radius: 3px;
-  transition: background-color 250ms ease-in-out, background-image 250ms ease-in-out, border-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
 }
 .form-label__checkbox-custom:focus {
   outline: none;
@@ -396,7 +396,7 @@ img {
   }
   .form-label__checkbox {
     display: flex;
-    align-items: center;
+    align-items: centerx;
   }
   .form-label__checkbox-custom {
     width: 15px;
