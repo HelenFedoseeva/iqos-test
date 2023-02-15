@@ -116,10 +116,18 @@
                         <label class="form__label">
                             <span class="form__label-title ro">Versiunea*</span>
                             <span class="form__label-title ru">Версия*</span>
-                            <input class="form__label-input" type="text" placeholder="Iqos 2.4" required>
-                            <button class="form__label-input-icon" type="button">
+                            <input id="version-input" class="form__label-input" type="text" required>
+                            <button id="arrow-select" class="form__label-input-icon" type="button">
                                 <img src="./images/icon-check/arrow-down-png.png" alt="arrow" width="10" height="7">
                             </button>
+                           <div class="form__select-version is-hidden">
+                            <ul class="form__select-version-list">
+                                <li class="form__select-version-item">IQOS 2.4 PLUS</li>
+                                <li class="form__select-version-item">IQOS 3.0</li>
+                                <li class="form__select-version-item">IQOS 3 DUO</li>
+                                <li class="form__select-version-item">IQOS 3 MULTI</li>
+                            </ul>
+                           </div>
                         </label>
                         <label class="form__label">
                             <span class="form__label-title ro">Cod dispozitiv*</span>
@@ -138,11 +146,7 @@
                                 cu caracter personal.</span>
                                 <span class="form-label__checkbox-text ru">Я соглашаюсь с Пользовательским соглашением для обработки персональных данных.</span>
                         </label>
-                        <button class="form__btn btn" type="submit"><span class="form__btn-text">Transmiteți</span>
-                            <svg class="form__btn-icon" width="14.2" height="12.4">
-                                <use href="./images/symbol-defs.svg#icon-arrow-iqos"></use>
-                            </svg>
-                        </button>
+                        <button class="form__btn btn" type="submit"><span class="form__btn-text">Transmiteți</span></button>
                     </form>
                 </div>
             </section>
@@ -390,7 +394,8 @@
     <script type="module" src="./index.js"></script>
     <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/dropdown.js"></script>
-    <script src="./js/langChange.js"></script>
-    <script src="./js/popup-open.js"></script>
+    <script type="module" src="./js/langChange.js"></script>
+    <script type="module" src="./js/popup-open.js"></script>
+    <script type="module" src="./js/select-version-IQOS.js"></script>
 </body>
 </html>

@@ -97,6 +97,7 @@ img {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+  transition: 250ms ease-in;
 }
 
 .btn {
@@ -130,6 +131,29 @@ img {
 
 .show {
   display: block;
+}
+
+.form__select-version {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.form__select-version-list {
+  padding: 8px;
+  width: 100%;
+}
+
+.form__select-version-item {
+  font-family: "IQOS";
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--main-font-color);
+  transition: color 250ms ease-in;
+}
+.form__select-version-item:hover, .form__select-version-item:focus {
+  color: red;
+}
+.form__select-version-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .header {
@@ -867,6 +891,7 @@ img {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+  transition: 250ms ease-in;
 }
 
 .modal {

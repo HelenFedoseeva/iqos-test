@@ -22,11 +22,11 @@ function translateLanguage() {
     const tagToHide = document.querySelectorAll(".ru");
     const tagToShow = document.querySelectorAll(".ro");
 
-    for (tag of tagToHide) {
+    for (let tag of tagToHide) {
       tag.classList.add("hideTag");
     }
 
-    for (tag of tagToShow) {
+    for (let tag of tagToShow) {
       tag.classList.remove("hideTag");
     }
   }
@@ -35,11 +35,11 @@ function translateLanguage() {
     const tagToHide = document.querySelectorAll(".ro");
     const tagToShow = document.querySelectorAll(".ru");
 
-    for (tag of tagToHide) {
+    for (let tag of tagToHide) {
       tag.classList.add("hideTag");
     }
 
-    for (tag of tagToShow) {
+    for (let tag of tagToShow) {
       tag.classList.remove("hideTag");
     }
   }
